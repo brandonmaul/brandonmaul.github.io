@@ -1,88 +1,90 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
 
-<title>Why, hello there.</title>
+  <title>Brandon Maul</title>
 
-<meta http-equiv=Content-Type name="viewport" width=device-width content="text/html; charset=utf-8">
-
-<style type=text/css media=screen>
-
-body {
-  font-family: Roboto, Arial, Sans-Serif;
-  font-size: 16px;
-  background-color: #292929;
-  color: #ffffff;
-  line-height: 125%;
-}
-
-.small {
-  font-size: 12px;
-}
-
-.large {
-  font-size: 20px;
-}
-
-#main {
-  width: 720px;
-  height: 100%;
-  position: fixed;
-  top: 100px;
-  left: 100px;
-  background-color: #292929;
-}
-
-#main2 {
-	margin: auto;
-
-}
-
-h1 {
-  align-self: center;
-  color: #fff;
-}
-
-a {
-    color: #BF3EFF;
-    text-decoration: underline;
-    padding: 0px 1px 0px 1px;
-}
-
-ul {
-  margin-left: -20px;
-  list-style-type: none;
-}
-</style>
+  <!-- CSS  -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link rel='shortcut icon' href='favicon.ico' type='images/favicon.ico/favicon.ico'/ >
 </head>
 
 
+<body class="grey lighten-1">
 
-<body>
+<!--   Main Card   -->
+  <div id="index-banner" class="container">
+      <div class="card-panel valign hoverable white">
+        <div class="container">
+          <h1 class="header center Blue-text bold text-darken-2">Brandon Maul</h1>
+          <br><br>
+          <div class="row center">
+            <h5 class="header col s12 light">Computer Science student, AI enthusiest, aficionado of dank memes.</h5>
+          </div>
 
-<div id="main">
+          <br><br>
 
-Hello, welcome to my rather simplistic place on the internet.
+          <div class="row center">
 
-<br><br>
+            <a class='dropdown-button btn-large waves-effect waves-light blue' href='#' data-activates='dropdown'>About Me</a>
+
+            <!-- Dropdown Structure -->
+            <ul id='dropdown' class='dropdown-content'>
+              <li><a class="center black-text" href="#!">Who I Am</a></li>
+              <li><a class="center black-text" href="#!">My Goals</a></li>
+              <li><a class="center black-text" href="#!">My Skills</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>
 
 
-My name is Brandon Maul, (<a href="http://gameofthrones.wikia.com/wiki/Brandon_Stark_(the_Builder)" target="_blank">The Builder</a>) ... This website serves as a brief introduction as to who I am and what I do. In short, I'm a computer science student and avid AI enthusiast who also dabbles in the affairs of computer securty and information forensics.
+<!--   Icon Section   -->
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12">
+          <div class="icon-block card-panel hoverable white">
+            <h2 class="center blue-text"><i class="material-icons">perm_identity</i></h2>
+            <h5 class="center">Who am I?</h5>
 
-<br><br>
+            <p class="center light flow-text">My name is Brandon Maul. This website serves as a brief introduction as to who I am and what I do. In short, I'm a computer science student and avid AI enthusiast who also dabbles in the affairs of computer securty and information forensics.</p>
+          </div>
+        </div>
 
-I hope to one day help develop and shape the world of machine learning for a company like <a href="http://www.google.com" target="blank">this</a> or a person like <a href="https://en.wikipedia.org/wiki/Elon_Musk" target="_blank">this</a>.
+        <div class="col s12">
+          <div class="icon-block card-panel hoverable white">
+            <h2 class="center blue-text"><i class="material-icons">done</i></h2>
+            <h5 class="center">What are my goals?</h5>
 
-<br><br>
+            <p class="center light flow-text">I hope to one day help develop and shape the world using machine learning. Hopefully for a company like <a href="http://www.google.com" target="blank">this</a> or a person like <a href="https://en.wikipedia.org/wiki/Elon_Musk" target="_blank">this</a>. I believe that AI is the next great leap for humanity, and the solution to many problems we face today.</p>
+          </div>
+        </div>
 
-As of right now my strenths and focuses are Python and Java development. I also have a minor understanding of the world of Perl and other basic scripting languages. I am looking to improve on this.
+        <div class="col s12">
+          <div class="icon-block card-panel hoverable white">
+            <h2 class="center blue-text"><i class="material-icons">list</i></h2>
+            <h5 class="center">What are my skills?</h5>
 
-<br><br>
+            <p class="center light flow-text">As of right now my most comfortable languages are Python and Java. I also have a novice understanding of Perl, JavaScript, HTML, and CSS. I am looking to improve on this.</p>
+          </div>
+        </div>
+      </div>
 
-Feel free to find me on <a href="http://www.github.com/daserbauer" target="_blank">github</a> or send me an <a href="mailto:bmaul@bmaul.com">email</a>.
+    </div>
+  </div>
 
-<br><br>
 
-</div>
-</body>
+  <!--  JavaScript  -->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
 </html>
