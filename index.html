@@ -8,22 +8,22 @@
 
   <!--   CSS   -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-  <link rel="stylesheet" href="css/animate.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/fadein.css" type="text/css" rel="stylesheet"/>
 
   <!--  JavaScript  -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
-
+  <script src="js/fadein.js"></script>
 </head>
 
 
 <body class="grey lighten-1">
 
 <!--   Main Card   -->
-  <div id="index-banner" class="container animated fadeInDown">
-      <div class="card-panel valign hoverable white">
+  <div id="index-banner" class="container">
+      <div class="fadein card-panel valign hoverable white">
         <div class="container">
           <h1 class="header center Blue-text bold text-darken-2">Brandon Maul</h1>
           <div class="row center">
@@ -31,13 +31,11 @@
             <h5 class="header col s12 light">Computer Science student, AI enthusiest, aficionado of dank memes.</h5>
           </div>
 
-
           <!--   Contact Me   -->
           <div class="row center">
             <a class='dropdown-button btn-large waves-effect waves-light blue' href='#' data-activates='dropdown'>Contact Me</a>
 
             <ul id='dropdown' class='dropdown-content grey lighten-5'>
-              <li><a class="center black-text" target="_blank" href="https://twitter.com/BrandonEXE">Twitter</a></li>
               <li><a class="center black-text" target="_blank" href="https://plus.google.com/u/0/+BrandonMaul">Google+</a></li>
               <li><a class="center black-text" target="_blank" href="https://github.com/brandonmaul">GitHub</a></li>
               <li><a class="center black-text" target="_blank" href="mailto:bmaul@bmaul.com">Email</a></li>
@@ -49,10 +47,10 @@
 
 
 <!--   Desktop Info Points   -->
-  <div class="container hide-on-med-and-down animated fadeInUp">
+  <div class="container hide-on-med-and-down">
     <div class="section">
       <div class="row">
-        <div class="col s12">
+        <div class="fadein col s12">
           <div class="icon-block card-panel hoverable white">
             <h2 class="center blue-text"><i class="material-icons">perm_identity</i></h2>
             <h5 class="center">Who am I?</h5>
@@ -61,7 +59,7 @@
           </div>
         </div>
 
-        <div class="col s12">
+        <div class="fadein col s12">
           <div class="icon-block card-panel hoverable white">
             <h2 class="center blue-text"><i class="material-icons">done</i></h2>
             <h5 class="center">What are my goals?</h5>
@@ -70,7 +68,7 @@
           </div>
         </div>
 
-        <div class="col s12">
+        <div class="fadein col s12">
           <div class="icon-block card-panel hoverable white">
             <h2 class="center blue-text"><i class="material-icons">list</i></h2>
             <h5 class="center">What are my skills?</h5>
@@ -83,7 +81,7 @@
   </div>
 
 <!--   Mobile Info Points   -->
-<div class="hide-on-large-only animated fadeInUp">
+<div class="hide-on-large-only">
   <ul class="collapsible popout" data-collapsible="accordion">
   <li>
     <div class="collapsible-header"><i class="material-icons">perm_identity</i>Who am I?</div>
