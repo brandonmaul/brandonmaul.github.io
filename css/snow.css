@@ -2,7 +2,7 @@ body { background-color:#333; }
 #snow{
 	background: none;
 	font-family: Androgyne;
-	background-image: url('https://www.wearewebstars.dk/codepen/img/s1.png'), url('https://www.wearewebstars.dk/codepen/img//s2.png'), url('https://www.wearewebstars.dk/codepen/img//s3.png');
+	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
 	height: 100%;
 	left: 0;
 	position: absolute;
