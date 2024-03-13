@@ -1,0 +1,150 @@
+
+:root {
+  --primary-color:#be0000;
+  --secondary-color:#F0F0C9;
+  --teritary-color:#F2BB05;
+  --quarternary-color:#D74E09;
+  --quinary-color:#6E0E0A;
+}
+
+* {
+  background: var(--quinary-color);
+  font-family: 'SF Mono Regular', monospace;
+  font-weight: 500;
+}
+
+a.photo::after {
+  content: "";
+  display: block;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 640px;
+  height: 360px;
+  max-width: 90vw;
+  max-height: 90vh;
+  background-image: url(prodigy.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  visibility: hidden;
+}
+
+a.photo:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+body {
+  min-height: 95vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+h3 {
+  display: inline-block;
+  font-size: inherit;
+  padding: 0 0.5em;
+  margin-bottom: 0;
+  background-color: var(--quarternary-color);
+  color: var(--secondary-color);
+}
+
+a {
+  color: var(--teritary-color);
+  text-decoration: none;
+}
+
+footer {
+  color: var(--primary-color);
+  margin-top: auto;
+  font-size: .75rem;
+  text-align: right;
+}
+
+.wikipedia:hover {
+  color: #FFFFFF
+}
+
+.github:hover {
+  color: #000000;
+}
+
+.youtube:hover {
+  color: #ff0000;
+}
+
+.mastodon:hover {
+  color: #772ce8;
+}
+
+.stack-overflow:hover {
+  color: #FF9900;
+}
+
+.swift-forums:hover {
+  color: #FF5723
+}
+
+
+.output {
+  width: 100%;
+  max-width: 80ch;
+  animation: fade 5s;
+}
+
+.cli {
+  display: inline-block;
+  width: 16ch;
+  animation: typing 2s steps(20), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: text-bottom; 
+  border-right: 10px solid var(--quarternary-color);
+  color: var(--quarternary-color);
+}
+
+/* animation */
+
+@keyframes fade {
+  0% {
+    opacity: 0
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 1;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* dynamic resizing */
+@media (min-width:600px) {
+  body {
+    font-size: 1.25rem;
+  }
+}
