@@ -38,6 +38,12 @@ a.photo:hover::after {
   visibility: visible;
 }
 
+@media (hover: none) and (pointer: coarse) {
+  a.photo::after {
+    display: none;
+  }
+}
+
 body {
   min-height: 95vh;
   padding: 1rem;
